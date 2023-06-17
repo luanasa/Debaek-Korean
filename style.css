@@ -121,11 +121,12 @@ nav{
 
 .metricas-container{
     display: flex;
+    justify-content: center;
     align-items:center;
     
     height: 2.5rem;
     column-gap: 1rem;
-    margin-left: 13%;
+    margin-left: 10%;
 }
 
 .metricas-container h1{
@@ -348,3 +349,61 @@ margin: 20px 0px;
 .footer p:last-child {
   font-size: 14px;
 }
+
+#mobile-menu {
+  display: none;
+}
+
+/* MOBILE RESPONSIVE   */
+
+@media screen and (max-width: 500px) {
+    .page-itens {
+      display: none;
+    }
+
+    .buttons {
+      display: none;
+    }
+
+    .logo {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav {
+      margin-bottom: -3.6rem;
+    }
+
+    #mobile-menu {
+      margin-right: 3rem;
+    }
+
+    .sobre-nos {
+      display: none;
+    }
+
+    .metricas-container {
+      display: none;   
+    }
+
+    .talentos-container h2, p {
+      text-align: center;
+    }
+
+    .depo-section h4 {
+      font-size: 12px;
+    }
+
+    .depo-section h3 {
+      width: 20rem;
+      font-size: 20px;
+      padding-right: 1rem;
+
+      margin-bottom: 2rem;
+    }
+
+    .footer {
+      margin-top: -9rem;
+      width: min-content;
+    }
+  }
